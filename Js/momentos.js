@@ -1,8 +1,8 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
 const supabase = createClient(
-    "https://dgjwxlugbrdwvwnlznff.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRnand4bHVnYnJkd3Z3bmx6bmZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0NDU4NjQsImV4cCI6MjA4OTAyMTg2NH0.3BaOPr0QDW72moXv5aZeJh1rzq2hn0AqIR2CEZSS2sE"
+    "https://nvjtpcgemgtginudzhuh.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im52anRwY2dlbWd0Z2ludWR6aHVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5NzcwOTcsImV4cCI6MjA4OTU1MzA5N30.weKoS-Ucasf126enYAjU6cDFGFBr9UgWXE493ZQYgz8"
 );
 
 const currentUserId = Number(localStorage.getItem("userId"));
