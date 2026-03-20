@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/home.css">
+    <link rel="stylesheet" href="../Css/wallpaper.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+
+    <video autoplay muted loop playsinline class="bg-video" id="bg-video">
+        <source id="bg-source" src="../assets/video/wallpaper1.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <span id="welcome"></span>
+        </div>
+
+        <div class="nav-center">
+            <a href="home.html"> HOME </a>
+            <a href="dedicatoria.html"> DEDICATORIA </a>
+            <a href="momentos.html"> MOMENTOS </a>
+            <a href="mensagens.html"> MENSAGENS </a>
+        </div>
+
+        <button id="logout" title="Sair">
+            <span class="material-symbols-outlined">logout</span>
+        </button>
+    </nav>
+
+    <h1>Estamos namorando há:</h1>
+
+    <div id="tempo">
+        <div class="box"><span id="anos">0</span>
+            <p>ANO(S)</p>
+        </div>
+        <div class="box"><span id="meses">0</span>
+            <p>MES(ES)</p>
+        </div>
+        <div class="box"><span id="dias">0</span>
+            <p>DIA(S)</p>
+        </div>
+
+        <div class="box grande">
+            <span id="relogio">00:00:00</span>
+        </div>
+    </div>
+
+    <script type="module" src="../Js/home.js"></script>
+</body>
+
+</html>

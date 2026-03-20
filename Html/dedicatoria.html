@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicatória</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/dedicatoria.css">
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/wallpaper.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <video autoplay muted loop playsinline class="bg-video" id="bg-video">
+        <source id="bg-source" src="../assets/video/wallpaper1.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <span id="welcome"></span>
+        </div>
+
+        <div class="nav-center">
+            <a href="home.html"> HOME </a>
+            <a href="dedicatoria.html"> DEDICATORIA </a>
+            <a href="momentos.html"> MOMENTOS </a>
+            <a href="mensagens.html"> MENSAGENS </a>
+        </div>
+
+        <button id="logout" title="Sair">
+            <span class="material-symbols-outlined">logout</span>
+        </button>
+    </nav>
+
+    <h1>Dedicatória Musical</h1>
+
+    <div class="search-container">
+        <input type="text" id="songName" placeholder="Digite o nome da música">
+        <button id="searchBtn">
+            <span class="material-symbols-outlined">search</span>
+        </button>
+    </div>
+
+    <div id="results"></div>
+
+    <div id="selectedSong" class="selected-song">
+        <img id="albumCover" width="250" style="display:none">
+        <p id="songArtist"></p>
+        <iframe id="player" width="350" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media"
+            style="display:none"></iframe>
+    </div>
+
+    <script type="module" src="../Js/dedicatoria.js"></script>
+
+</body>
+
+</html>

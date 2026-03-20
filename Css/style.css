@@ -1,0 +1,62 @@
+@media screen and (max-width: 600px) {
+    #profiles {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.container h1 {
+    color: white;
+}
+
+#profiles {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    border: 3px solid transparent;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.06);
+    border-color: white;
+}
+
+.name {
+    color: white;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}

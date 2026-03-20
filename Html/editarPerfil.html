@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" href="../Css/editarPerfil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="edit-container">
+
+        <div class="top-bar">
+            <button class="back-btn" onclick="window.location.href='login.html'">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Voltar
+            </button>
+        </div>
+
+        <h2>Editar Perfil</h2>
+
+        <div class="avatar-section">
+            <img id="avatarPreview" alt="Avatar do perfil">
+
+            <label for="avatarInput" class="upload-btn">
+                Escolher imagem
+            </label>
+            <input type="file" id="avatarInput" accept="image/*" hidden>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="nameInput" placeholder="Novo nome">
+        </div>
+
+        <button id="saveProfile">Salvar</button>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../Js/editarPerfil.js"></script>
+
+</body>
+
+</html>
