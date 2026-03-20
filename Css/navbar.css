@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 15px 40px;
 
     background: rgba(0, 0, 0, 0.7);
@@ -29,6 +30,11 @@
     z-index: 1000;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    width: 100%;
+    left: 0;
+
+    box-sizing: border-box;
 }
 
 .nav-center {
@@ -173,5 +179,27 @@
 
     to {
         box-shadow: 0 0 15px var(--cor-glow);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 10px;
+        flex-wrap: wrap;
+        /* 🔥 permite quebrar linha */
+        gap: 10px;
+    }
+
+    .nav-center {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* 🔥 quebra os links */
+        gap: 15px;
+    }
+
+    #logout {
+        margin-left: auto;
+        /* mantém ele à direita */
     }
 }
