@@ -76,7 +76,7 @@ searchBtn.addEventListener("click", async () => {
     if (!query) return;
 
     try {
-        const response = await fetch(`http://127.0.0.1:5000/search?q=${encodeURIComponent(query)}`);
+        const response = await fetch(`https://spotify-api-93ud.onrender.com/search?q=${encodeURIComponent(query)}`);
         if (!response.ok) {
             console.error("Erro na resposta do servidor:", response.status);
             return;
