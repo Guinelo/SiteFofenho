@@ -7,14 +7,14 @@ const supabaseClient = createClient(supabaseUrl, supabaseKey);
 const currentUserId = Number(localStorage.getItem("userId"));
 const userName = localStorage.getItem("userName");
 
-if (!currentUserId) window.location.href = "login.html";
+if (!currentUserId) window.location.href = "index.html";
 
 document.getElementById("welcome").textContent = `Olá, ${userName}`;
 document.getElementById("logout").onclick = () => {
     localStorage.removeItem("profile");
     localStorage.removeItem("userId");
     localStorage.removeItem("userName");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 };
 
 const video = document.getElementById("bg-video");

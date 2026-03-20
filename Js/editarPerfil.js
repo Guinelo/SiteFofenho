@@ -92,6 +92,6 @@ document.getElementById("saveProfile").onclick = async () => {
 
     alert("Perfil atualizado!");
 
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 
 };
