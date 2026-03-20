@@ -34,7 +34,7 @@ def get_token():
 
     return token_cache["access_token"]
 
-@app.route("/api/search")
+@app.route("/search")
 def search():
     query = request.args.get("q")
 
@@ -63,5 +63,6 @@ def search():
 
     return jsonify(tracks)
 
-def handler(request):
-    return app(request.environ, lambda status, headers: None)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
