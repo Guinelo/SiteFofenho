@@ -23,26 +23,23 @@ function criarSeparador() {
     document.body.appendChild(divider);
 }
 
-const video = document.getElementById("bg-video");
-const source = document.getElementById("bg-source");
 const root = document.documentElement;
 
 if (currentUserId == 1) {
-    source.src = "../assets/video/wallpaper1.mp4";
 
     root.style.setProperty('--cor-borda', '#00aaff');
     root.style.setProperty('--cor-fundo', 'rgba(0, 170, 255, 0.1)');
     root.style.setProperty('--cor-glow', 'rgba(0, 170, 255, 0.6)');
+    root.style.setProperty('-cor-meio-wallpaper', 'rgb(10, 160, 219)');
+    root.style.setProperty('--cor-centro-wallpaper', 'rgb(4, 183, 228)');
 } else {
-    source.src = "../assets/video/wallpaper2.mp4";
 
     root.style.setProperty('--cor-borda', '#a855f7');
     root.style.setProperty('--cor-fundo', 'rgba(168, 85, 247, 0.1)');
     root.style.setProperty('--cor-glow', 'rgba(168, 85, 247, 0.6)');
+    root.style.setProperty('--cor-meio-wallpaper', 'rgba(183, 20, 204, 1)');
+    root.style.setProperty('--cor-centro-wallpaper', 'rgba(230, 23, 212, 1)');
 }
-
-video.load();
-video.play();
 
 const inicio = new Date(2024, 4, 19, 21, 0, 0);
 
@@ -122,8 +119,8 @@ async function carregarDedicatorias() {
             data.forEach(d => {
                 html += `
                     <div class="dedication-card">
-                        <iframe src="https://open.spotify.com/embed/track/${d.song_id}?theme=1" 
-                            width="300" height="80" frameborder="0" 
+                        <iframe src="https://open.spotify.com/embed/track/${d.song_id}?theme=1"
+                            width="300" height="80" frameborder="0"
                             allow="autoplay; clipboard-write; encrypted-media">
                         </iframe>
 

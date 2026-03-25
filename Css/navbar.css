@@ -9,6 +9,9 @@
     --cor-borda: #00aaff;
     --cor-fundo: rgba(0, 170, 255, 0.2);
     --cor-glow: rgba(0, 170, 255, 0.6);
+
+    --cor-meio-wallpaper: rgb(10, 160, 219);
+    --cor-centro-wallpaper: rgb(4, 183, 228);
 }
 
 .navbar {
